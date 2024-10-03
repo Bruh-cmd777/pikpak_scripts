@@ -4,7 +4,6 @@ const axios = require("axios");
 const Mailjs = require("@cemalgnlts/mailjs");
 const mailjs = new Mailjs();
 
-
 async function main() {
   const response = await mailjs.createOneAccount();
   const username = response.data.username;
